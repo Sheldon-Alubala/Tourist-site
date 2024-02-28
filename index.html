@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tours and Travel</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!--box-icon-->
+   
+   <link rel="stylesheet" href="htpps://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+   <link rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    <!--header-->
+    <nav>
+        <div class="nav_bar">
+            <i class="bx bx-menu sidebarOpen"></i>
+            <span class="logo navLogo"><a href="#">Tours&Travel</a></span>
+
+            <div class="menu">
+                <div class="logo_toggle">
+                    <span class="logo"><a href="#">Tours & Travel</a></span>
+                    <i class="bx bx-x sidebarClose"></i>
+                </div>
+                <ul class="nav_links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="darklight_searchBox">
+                <div class="dark_light">
+                    <i class="bx bx-moon moon"></i>
+                    <i class="bx bx-sun sun"></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                    <i class="bx bx-x cancel"></i>
+                    <i class="bx bx-search search"></i>
+                    </div>
+
+                    <div class="search_field">
+                        <input type="text" placeholder="Type here...">
+                        <i class="bx bx-search"></i>
+                    </div>
+            </div>
+
+            <button class="button" id="form_open">login</button>
+        </div>
+    </nav>
+
+    <!--filter Button-->
+
+    <div class="filter_container">
+        <div class="filter_buttons">
+            <button class="active" data-name="all">Show all</button>
+            <button data-name="sunny beaches">Beaches</button>
+            <button data-name="wildlife">Wildlife</button>
+            <button data-name="scenic ">Scenic</button>
+            <button data-name="cities">Staycation</button>
+            <button data-name="culture">Culture</button>
+        </div>
+
+        <!--Images Cards-->
+        <div class="filterable_cards">
+            <div class="card" data-name="beaches">
+                <img src="images/seaturtlebeach.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Sea turtle beach</h6>
+                    <p class="card_text">Sea turtle beach in Madagascar.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="staycation">
+                <img src="images/feztown.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Fez town</h6>
+                    <p class="card_text">An areal view of Fez town.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="wildlife">
+                <img src="images/giraffe.jpg" alt="beaches" />
+                <div class="card_body">
+                    <h6 class="card_title">Giraffe</h6>
+                    <p class="card_text">Giraffes in Tsavo National park in Kenya.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="physical">
+                <img src="images/tablemountain.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Table Mountain</h6>
+                    <p class="card_text">Table mountain in Cape Town South Africa.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="staycation">
+                <img src="images/victoriawaterfront.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Victoria Water Front</h6>
+                    <p class="card_text">Victoria water front in South Africa.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="culture">
+                <img src="images/ruralvillagemdg.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Rural Village </h6>
+                    <p class="card_text">A rural village in Madagascar.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="staycation">
+                <img src="images/addisababa.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Addis Abbaba</h6>
+                    <p class="card_text"> An areal view of Addis Abbaba in Tanzania.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="staycation">
+                <img src="images/alazarhpark.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Alazar park</h6>
+                    <p class="card_text"> The Alazar park in Egypt is a great place to visit.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="wildlife">
+                <img src="images/baboon.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Baboon</h6>
+                    <p class="card_text"> African Baboons are very masculine .</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="staycation">
+                <img src="images/baobabsunrise.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Addis Abbaba</h6>
+                    <p class="card_text"> An areal view of Addis Abbaba in Tanzania.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="staycation">
+                <img src="images/addisababa.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Addis Abbaba</h6>
+                    <p class="card_text"> An areal view of Addis Abbaba in Tanzania.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="staycation">
+                <img src="images/addisababa.jpg" alt="" />
+                <div class="card_body">
+                    <h6 class="card_title">Addis Abbaba</h6>
+                    <p class="card_text"> An areal view of Addis Abbaba in Tanzania.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--form-->
+    <section class="home">
+        <div class="form_container"> 
+            <i class="bx bx-x form_close"></i>
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="bx bx-envelope email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your password" required>
+                        <i class="bx bx-lock password"></i>
+                        <i class="bx bx-eye pw_hide"></i>
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox"  id="check" />
+                            <label for="check" class="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+
+                    <button class="button">Login Now</button>
+
+                    <div class="login_signup">Don't have an account? <a href="#" id="login">Signup</a></div>
+
+                </form>
+            </div>
+
+            <!--signup form-->
+
+            <div class="form_container"> 
+                <i class="bx bx-x form_close"></i>
+                <div class="form signup_form">
+                    <form action="#">
+                        <h2>Signup</h2>
+                        <div class="input_box">
+                            <input type="text" placeholder="Enter your email" required>
+                            <i class="bx bx-envelope email"></i>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" placeholder="Create password" required>
+                            <i class="bx bx-lock password"></i>
+                            <i class="bx bx-eye pw_hide"></i>
+                        </div>
+
+                        <div class="input_box">
+                            <input type="text" placeholder="Confirm password" required>
+                            <i class="bx bx-lock password"></i>
+                            <i class="bx bx-eye pw_hide"></i>
+                        </div>
+    
+                        <button class="button">Signup Now</button>
+    
+                        <div class="login_signup">Already have a account? <a href="#" id="signup">Login</a></div>
+    
+
+
+        </div>
+
+    </section>
+
+
+     
+        <!---Home-->
+     <!----   <section class="home">
+            <div class="form_container">
+                <i class="uil uil-times form_close"></i>
+                <!--login Form-->
+         <!----       <div class="form login_form">
+                    <form action="#">
+                        <h2>Login</h2>
+
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required/>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <span class="error email-error">
+                            <i class="bx bx-error-circle error-icon"></i>
+                            <p class="error-text">Please enter a valid email</p>
+                        </span>
+                        <div class="input_box">
+                            <input type="password" placeholder="Enter your Password" required/>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+
+                        <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+                            </span>
+                            <a href="#" class="forget_pw">Forgot password</a>
+                        </div>
+
+                        <button class="button" id="form_open">Login Now</button>
+
+                        <div class="login_signup">Don't have an account?<a href="#" id="signup">Signup</a></div>
+                    </form>
+                </div>
+                <!---signup form-->
+           <!----     <div class="form signup_form">
+                    <form action="#">
+                        <h2>Signup</h2>
+
+                        <div class="input_box">
+                            <input type="email" placeholder="Enter your email" required/>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <span class="error email-error">
+                            <i class="bx bx-error-circle error-icon"></i>
+                            <p class="error-text">Please enter a valid email</p>
+                        </span>
+
+                        <div class="input_box">
+                            <input type="password" placeholder="Create password" required/>
+                            <i class="bx bx-hide show_hide email"></i>
+                        </div>
+                        <span class="error password_error">
+                            <i class="bx bx-error-circle error_icon"></i>
+                            <p class="error_text">
+                                Please enter atleast 8 character with number,symbol,upper and lower
+                                case letters
+                            </p>
+                        </span>
+                        <div class="input_box">
+                            <input type="password" placeholder="Confirm Password" required/>
+                            <i class="bx bx-hide show_hide password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+                        <span class="error cpassword_error">
+                            <i class="bx bx-error-circle error_icon"></i>
+                            <p class="error_text">
+                                password don't match
+                            </p>
+                        </span>
+
+                        <div class="input_field button">
+                            <input type="submit" value="Signup now">
+                        </div>
+
+                     
+
+                        <div class="login_signup">Already have an account?<a href="#" id="login">Login</a></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+ 
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+   
+</body>
+</html>
